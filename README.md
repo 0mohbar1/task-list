@@ -101,7 +101,8 @@ and do not touch your MySQL data.
 - **New tasks are added to the top of the list from the API response**, without refetching the whole list.
 
 ## Unfinished / Possible improvements
-
+- Rate limiting on the API (e.g. Laravel's `throttle` middleware) to prevent request spam.
+- Authentication, so each user only sees their own tasks (out of scope per the spec).
 - Pagination for large task lists, with an index on `created_at`.
 - Undo completion, edit and delete (not required by the spec).
 - Frontend tests (e.g. Vitest).
