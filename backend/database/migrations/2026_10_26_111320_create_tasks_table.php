@@ -11,12 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-       Schema::create('tasks', function (Blueprint $table) {
-    $table->id();
-    $table->string('title', 100);
-    $table->boolean('completed')->default(false);
-    $table->timestamps();
-});
+        Schema::create('tasks', function (Blueprint $table) {
+            $table->id();
+            $table->string('title', 100);
+            $table->boolean('completed')->default(false);
+            $table->timestamps();
+        });
     }
 
     /**
